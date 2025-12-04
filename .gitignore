@@ -1,0 +1,51 @@
+# --- Python General ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# --- Entornos Virtuales (Si uv crea uno local) ---
+.venv/
+env/
+venv/
+ENV/
+
+# --- Variables de Entorno y Secretos (CRÍTICO) ---
+.env
+.env.local
+.env.*.local
+
+# --- Data Science & Proyecto SOOP ---
+# Ignoramos la carpeta data porque pesará gigas
+data/
+# Ignoramos los logs de ejecución
+logs/*.log
+# Ignoramos checkpoints de modelos (son pesados)
+src/modeling/model_store/*.pkl
+src/modeling/model_store/*.h5
+src/modeling/model_store/*.joblib
+
+# --- Jupyter Notebooks ---
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# --- IDEs ---
+.vscode/
+.idea/
