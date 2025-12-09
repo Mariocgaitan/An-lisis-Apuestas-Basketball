@@ -48,7 +48,7 @@ class OddsApiClient:
             return 0
 
 # Agregamos 'eu' (Europa) para traer a Pinnacle y Bet365
-    def get_odds(self, markets="h2h,spreads", regions="us,eu"):
+    def get_odds(self, markets="h2h,spreads,totals", regions="us,eu"):
         """
         Descarga los momios para la NBA.
         markets: 'h2h' (ganador), 'spreads' (hándicap), 'totals' (altas/bajas), 'player_points', etc.
@@ -104,4 +104,4 @@ if __name__ == "__main__":
     client.check_quota()
     
     # 2. Si quieres probar descargar momios reales (Gasta 1 crédito), descomenta la siguiente línea:
-    client.get_odds(markets="h2h")
+    client.get_odds(markets="h2h,spreads,totals", regions="us,eu")
